@@ -26,3 +26,15 @@
 *.exe
 *.out
 *.app
+
+Temp/
+temp/
+Tmp/
+tmp/
+
+*.iff
+
+Archive/
+archive/
+
+*.tmp
