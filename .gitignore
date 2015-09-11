@@ -38,3 +38,6 @@ Archive/
 archive/
 
 *.tmp
+
+.DS_Store
+Desktop.ini
