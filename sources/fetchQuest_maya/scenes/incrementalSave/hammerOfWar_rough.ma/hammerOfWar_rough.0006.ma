@@ -1,6 +1,6 @@
 //Maya ASCII 2016 scene
-//Name: hammerOfWar_rough.0001.ma
-//Last modified: Tue, Sep 15, 2015 11:59:31 AM
+//Name: hammerOfWar_rough.ma
+//Last modified: Tue, Sep 15, 2015 12:01:11 PM
 //Codeset: UTF-8
 requires maya "2016";
 requires -nodeType "Unfold3DUnfold" -nodeType "Unfold3DOptimize" "Unfold3D" "Trunk.r2232.release.Mar 18 2015|11:45:08";
@@ -1630,4 +1630,4 @@ connectAttr "Unfold3DOptimize7.om" "Unfold3DOptimize8.im";
 connectAttr "Unfold3DOptimize8.om" "polyTweakUV7.ip";
 connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
 connectAttr "pCylinderShape1.iog" ":initialShadingGroup.dsm" -na;
-// End of hammerOfWar_rough.0001.ma
+// End of hammerOfWar_rough.ma
