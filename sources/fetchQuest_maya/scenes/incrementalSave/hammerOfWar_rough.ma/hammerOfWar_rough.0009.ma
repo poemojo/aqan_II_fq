@@ -1,6 +1,6 @@
 //Maya ASCII 2016 scene
 //Name: hammerOfWar_rough.ma
-//Last modified: Tue, Sep 15, 2015 01:27:34 PM
+//Last modified: Tue, Sep 15, 2015 01:25:48 PM
 //Codeset: UTF-8
 requires maya "2016";
 requires -nodeType "Unfold3DUnfold" "Unfold3D" "Trunk.r2232.release.Mar 18 2015|11:45:08";
@@ -14,13 +14,13 @@ fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "EC1B7FAE-0D47-0C20-3B2F-939FB5C2440B";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 61.435149993990692 11.673699734281605 -3.4459744831777774 ;
+	setAttr ".t" -type "double3" 21.342708804874007 10.595087659995592 -1.064044581936689 ;
 	setAttr ".r" -type "double3" -1.538352728362903 -266.59999999998951 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "679AD037-EE4B-824C-D9C2-8FBC08AA7BD2";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999986;
-	setAttr ".coi" 60.95618590790707;
+	setAttr ".coi" 20.778569819293747;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -4327,7 +4327,7 @@ createNode polySmoothFace -n "polySmoothFace2";
 	setAttr ".ma" yes;
 	setAttr ".m08" yes;
 createNode nodeGraphEditorInfo -n "MayaNodeEditorSavedTabsInfo";
-	rename -uid "5CA82151-7B43-BF1B-415B-B0BCC6665C4B";
+	rename -uid "22B3E3FD-E944-E8C4-1410-A39599150E72";
 	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
 	setAttr ".tgi[0].vl" -type "double2" -927.85453000114319 -1057.0969907343078 ;
 	setAttr ".tgi[0].vh" -type "double2" 1003.0977742220862 380.99819021616145 ;
