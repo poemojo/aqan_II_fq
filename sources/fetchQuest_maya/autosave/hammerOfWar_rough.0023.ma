@@ -1,6 +1,6 @@
 //Maya ASCII 2016 scene
-//Name: hammerOfWar_rough.ma
-//Last modified: Fri, Sep 18, 2015 12:31:51 PM
+//Name: hammerOfWar_rough.0023.ma
+//Last modified: Fri, Sep 18, 2015 01:15:21 PM
 //Codeset: UTF-8
 requires maya "2016";
 requires -nodeType "mentalrayFramebuffer" -nodeType "mentalrayOptions" -nodeType "mentalrayGlobals"
@@ -8,6 +8,7 @@ requires -nodeType "mentalrayFramebuffer" -nodeType "mentalrayOptions" -nodeType
 requires "stereoCamera" "10.0";
 requires "stereoCamera" "10.0";
 currentUnit -l centimeter -a degree -t ntscf;
+fileInfo "exportedFrom" "/Volumes/SOAC/David Levinson/aqan_II_fq/sources/fetchQuest_maya/scenes/hammerOfWar_rough.ma";
 fileInfo "application" "maya";
 fileInfo "product" "Maya 2016";
 fileInfo "version" "2016";
@@ -17,13 +18,13 @@ fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "EC1B7FAE-0D47-0C20-3B2F-939FB5C2440B";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -82.839371670219919 -1.8694681080827653 -22.168535930069808 ;
+	setAttr ".t" -type "double3" -33.074756155151547 0.52559690537200987 -8.834147391183091 ;
 	setAttr ".r" -type "double3" 2.661647272204501 -464.99999999997726 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "679AD037-EE4B-824C-D9C2-8FBC08AA7BD2";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999986;
-	setAttr ".coi" 85.854248418775498;
+	setAttr ".coi" 34.278486558311968;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -133,7 +134,7 @@ createNode parentConstraint -n "joint1_parentConstraint1" -p "joint1";
 	setAttr ".erp" yes;
 	setAttr ".tg[0].tot" -type "double3" 0 3.4694469519536142e-18 -2.9802321815988367e-08 ;
 	setAttr ".tg[0].tor" -type "double3" 1.2722218725854067e-14 1.2722218725854067e-14 
-		5.649800061504203e-30 ;
+		5.6498000615042044e-30 ;
 	setAttr ".lr" -type "double3" -1.2722218725854067e-14 -1.2722218725854067e-14 1.4124500153760508e-30 ;
 	setAttr ".rst" -type "double3" -2.9802322387695312e-08 -1.2680109739303589 0.025811493396759037 ;
 	setAttr ".rsrr" -type "double3" -1.2722218725854067e-14 -1.2722218725854067e-14 
@@ -227,7 +228,6 @@ createNode transform -n "mesh_hammerWar_head_a01" -p "trans_hammerWar_a01";
 createNode mesh -n "mesh_hammerWar_head_a01_Shape" -p "mesh_hammerWar_head_a01";
 	rename -uid "4D401545-F242-2A24-5B31-6D8EAB8CD59A";
 	setAttr -k off ".v";
-	setAttr -s 2 ".iog[0].og";
 	setAttr ".iog[0].og[0].gcl" -type "componentList" 1 "f[0:9151]";
 	setAttr ".sech" no;
 	setAttr ".vir" yes;
@@ -31971,17 +31971,17 @@ createNode mesh -n "mesh_hammerWar_haft_a01_Shape" -p "mesh_hammerWar_haft_a01";
 	setAttr ".dr" 1;
 	setAttr ".vcs" 2;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "641F3ACE-B049-3320-3F2A-4D8C1545BE0A";
+	rename -uid "E229CEC8-FF45-E143-0F67-6394F15BD8E2";
 	setAttr -s 4 ".lnk";
 	setAttr -s 4 ".slnk";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "AEB806CD-DE45-0CE4-901C-4684787A35D1";
+	rename -uid "38C69404-A44A-F311-86D1-6C8A89ED21CB";
 	setAttr -s 2 ".dli[1]"  1;
 	setAttr -s 2 ".dli";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "39A69CC8-D340-B3E6-6994-2C84C9B12BC3";
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "C1E339B5-0842-1BE1-0981-589B875DBB80";
+	rename -uid "471E9B29-3C44-304C-D312-F987623E4ED3";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "0BE435EB-6E4E-4313-30D0-BAB71DE238D8";
 	setAttr ".g" yes;
@@ -32076,9 +32076,6 @@ createNode dagPose -n "bindPose2";
 		 -1.2680109739303589 0.025811493396759033 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0.5 0.49999999999999989 0.5 0.50000000000000011 1
 		 1 1 yes;
 	setAttr ".bp" yes;
-createNode groupId -n "groupId1";
-	rename -uid "42715202-EE49-7391-543C-47BFC236D3A9";
-	setAttr ".ihi" 0;
 createNode blinn -n "blinn1";
 	rename -uid "D9D105F2-E24A-43DB-5409-AFA745F0237B";
 	setAttr ".sc" -type "float3" 0.32167831 0.32167831 0.32167831 ;
@@ -32099,9 +32096,14 @@ createNode place2dTexture -n "place2dTexture1";
 	rename -uid "9A0972B2-C440-8DE9-BAC9-958B1D23ACDE";
 createNode blinn -n "blinn2";
 	rename -uid "C6F71E1D-CE47-BEDF-3407-A89E5D9D24BD";
+	setAttr ".c" -type "float3" 0.15384616 0.15384616 0.15384616 ;
+	setAttr ".rfl" 0;
+	setAttr ".ec" 0.41595840454101562;
+	setAttr ".sro" 0.096000000834465027;
 createNode shadingEngine -n "blinn2SG";
 	rename -uid "C7EA2FC2-C04D-777D-CAAC-DDA5CFADB966";
 	setAttr ".ihi" 0;
+	setAttr -s 2 ".dsm";
 	setAttr ".ro" yes;
 createNode materialInfo -n "materialInfo2";
 	rename -uid "D75D9FD3-D443-31CE-8B3F-588409726FF9";
@@ -32427,7 +32429,6 @@ select -ne :defaultRenderUtilityList1;
 select -ne :defaultRenderingList1;
 select -ne :defaultTextureList1;
 select -ne :initialShadingGroup;
-	setAttr -s 3 ".dsm";
 	setAttr ".ro" yes;
 select -ne :initialParticleSE;
 	setAttr ".ro" yes;
@@ -32443,8 +32444,6 @@ select -ne :defaultResolution;
 select -ne :hardwareRenderGlobals;
 	setAttr ".ctrs" 256;
 	setAttr ".btrs" 512;
-select -ne :ikSystem;
-	setAttr -s 4 ".sol";
 connectAttr "joint1_parentConstraint1.ctx" "joint1.tx";
 connectAttr "joint1_parentConstraint1.cty" "joint1.ty";
 connectAttr "joint1_parentConstraint1.ctz" "joint1.tz";
@@ -32472,9 +32471,6 @@ connectAttr "joint1.pim" "joint1_scaleConstraint1.cpim";
 connectAttr "pSolid1.s" "joint1_scaleConstraint1.tg[0].ts";
 connectAttr "pSolid1.pm" "joint1_scaleConstraint1.tg[0].tpm";
 connectAttr "joint1_scaleConstraint1.w0" "joint1_scaleConstraint1.tg[0].tw";
-connectAttr "groupId1.id" "mesh_hammerWar_head_a01_Shape.iog.og[0].gid";
-connectAttr ":initialShadingGroup.mwc" "mesh_hammerWar_head_a01_Shape.iog.og[0].gco"
-		;
 connectAttr "layer1.di" "mesh_hammerWar_haft_a01.do";
 relationship "link" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
@@ -32519,6 +32515,7 @@ connectAttr "place2dTexture1.vc1" "hammerWar_haft_COLOR_1.vc1";
 connectAttr "place2dTexture1.o" "hammerWar_haft_COLOR_1.uv";
 connectAttr "place2dTexture1.ofs" "hammerWar_haft_COLOR_1.fs";
 connectAttr "blinn2.oc" "blinn2SG.ss";
+connectAttr "mesh_hammerWar_head_a01_Shape.iog" "blinn2SG.dsm" -na;
 connectAttr "blinn2SG.msg" "materialInfo2.sg";
 connectAttr "blinn2.msg" "materialInfo2.m";
 connectAttr ":mentalrayGlobals.msg" ":mentalrayItemsList.glb";
@@ -32550,7 +32547,4 @@ connectAttr "place2dTexture2.msg" ":defaultRenderUtilityList1.u" -na;
 connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
 connectAttr "hammerWar_haft_COLOR_1.msg" ":defaultTextureList1.tx" -na;
 connectAttr "pSolidShape1.iog" ":initialShadingGroup.dsm" -na;
-connectAttr "mesh_hammerWar_head_a01_Shape.iog.og[0]" ":initialShadingGroup.dsm"
-		 -na;
-connectAttr "groupId1.msg" ":initialShadingGroup.gn" -na;
-// End of hammerOfWar_rough.ma
+// End of hammerOfWar_rough.0023.ma
