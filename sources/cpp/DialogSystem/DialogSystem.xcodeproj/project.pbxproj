@@ -1,0 +1,74 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 47;
+	objects = {
+
+/* Begin PBXFileReference section */
+		3E2212C11BC4524C00987814 /* test.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = test.cpp; sourceTree = "<group>"; };
+		3E2212C21BC4524C00987814 /* test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = test.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		3E2212BA1BC4406D00987814 = {
+			isa = PBXGroup;
+			children = (
+				3E2212C11BC4524C00987814 /* test.cpp */,
+				3E2212C21BC4524C00987814 /* test.h */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		3E2212BB1BC4406D00987814 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+			};
+			buildConfigurationList = 3E2212BE1BC4406D00987814 /* Build configuration list for PBXProject "DialogSystem" */;
+			compatibilityVersion = "Xcode 6.3";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3E2212BA1BC4406D00987814;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		3E2212BF1BC4406D00987814 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		3E2212C01BC4406D00987814 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3E2212BE1BC4406D00987814 /* Build configuration list for PBXProject "DialogSystem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E2212BF1BC4406D00987814 /* Debug */,
+				3E2212C01BC4406D00987814 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3E2212BB1BC4406D00987814 /* Project object */;
+}
